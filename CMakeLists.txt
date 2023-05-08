@@ -20,6 +20,6 @@ set(SOURCES "${IMGUI_SOURCE_DIR}/imgui_demo.cpp"
 #                 "${IMGUI_SOURCE_DIR}/backends/imgui_impl_glfw.h")
 
 add_library(imgui ${HEADERS} ${SOURCES} )
-if (BUILD_SHARED_LIBS)
+
     target_compile_options(imgui PUBLIC -fPIC)
-endif()
+
